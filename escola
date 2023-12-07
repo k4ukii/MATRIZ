@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>escola</title>
+    </head>
+
+    <body>
+<script>
+let matricula = [];
+let media = [];
+let frequencia= [];
+ let soma = 0;
+let soma1 = 0;
+
+let r = prompt("deseja adicionar mais um aluno? s/n");
+while (r =="s")
+{
+
+
+ let codigo = prompt("Insira o número de matrícula");
+ matricula.push(codigo)
+
+ let nota = Number(prompt("Insira a média"));
+ media.push(nota);
+
+ let falta = Number(prompt("Insira a frequência "));
+ frequencia.push(falta);
+
+ r = prompt("deseja adicionar mais um aluno? s/n");
+};
+
+for (let i = 0; i < media.length ; i++) {
+  soma += media[i];
+    
+};
+for (let j = 0; j < frequencia.length ; j++) {
+  soma1 += frequencia[j];
+    
+};
+
+
+
+ document.write(matricula+"</br>"+media+"</br>"+frequencia+"</br>"+matricula.length+", "+(soma/media.length)+", "+(soma1/frequencia.length));
+</script>
+    </body>
+
+</html>
