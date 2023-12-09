@@ -1,0 +1,46 @@
+<html>
+  <head><title>matrizinversa</title>
+  <script>
+    let matrizA = [
+["10","20","30","40","50","60"],
+["11","22","33","44","55","66"],
+["01","02","03","04","05","06"],
+["12","24","35","46","57","68"],
+["21","42","53","64","75","86"]
+      ];
+      
+      let matrizB = [
+        [matrizA[0][0], matrizA[1][0], matrizA[2][0],matrizA[3][0],matrizA[4][0], matrizA[5][0]],
+        [matrizA[0][1], matrizA[1][1], matrizA[2][1], matrizA[3][1],matrizA[4][1], matrizA[5][1],],
+        [matrizA[0][2], matrizA[1][2], matrizA[2][2], matrizA[3][2],matrizA[4][2], matrizA[5][2]],
+        [matrizA[0][3], matrizA[1][3], matrizA[2][3], matrizA[3][3],matrizA[4][3], matrizA[5][3]],
+        [matrizA[0][4], matrizA[1][4], matrizA[2][4], matrizA[3][4],matrizA[4][4], matrizA[5][4]],
+        [matrizA[0][5], matrizA[1][5], matrizA[2][5], matrizA[3][5],matrizA[4][5], matrizA[5][5]]
+        ];
+        document.write("Matriz A: </br>")
+        imprimirA(matrizA);
+        
+        document.write("Matriz B: </br>")
+        imprimirB(matrizB);
+        
+        function imprimirA(matrizA){
+          for(let i=0; i<matrizA.length; i++){
+            document.write(matrizA[i].join(", ")+"</br>");
+          }
+          
+        }
+        function imprimirB(matrizB){
+          for(let i=0; i<matrizB.length; i++){
+            document.write(matrizB[i].join(", ")+"</br>");
+          }
+          
+        }
+        
+        
+      
+  </script>
+  </head>
+  <body>
+    
+  </body>
+</html>
